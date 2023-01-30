@@ -130,3 +130,6 @@ dmypy.json
 
 # MacOS
 .DS_Store
+
+# Tango With Django Test Files
+tests_chapter*.py
