@@ -6,10 +6,16 @@
 {% endblock %}
 
 {% block body_block %}
-<h1>Rango says...</h1>
-<div>
-    here is the about page. <br />
-</div>
-<img src="{% static 'images/rango.jpg' %}" alt="Picture of Rango" />
-<img src="{{ MEDIA_URL }}cat.jpg" alt="Picture of a Cat" />
+    <h1>Rango says...</h1>
+    <div>
+        here is the about page. <br />
+        This page has been put together by Joe Johnston. <br />
+        {% if visits %}
+        Visits: {{ visits }}<br />
+        {% endif %}
+    </div>
+    <div>
+        <img src="{% static 'images/rango.jpg' %}" alt="Picture of Rango" />
+        <img src="{{ MEDIA_URL }}cat.jpg" alt="Picture of a Cat" />
+    </div>
 {% endblock %}
